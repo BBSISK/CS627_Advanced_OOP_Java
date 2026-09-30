@@ -6,4 +6,4 @@
 - 🤖 I build with AI agents every day (Claude Code, Google Antigravity), and I build agents into my own apps
 -    
 
-Here is am testing the Git commands to see how the file gets copied across
+Updated to test GITLAB Functionality
