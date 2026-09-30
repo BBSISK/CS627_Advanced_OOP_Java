@@ -6,4 +6,8 @@
 - 🤖 I build with AI agents every day (Claude Code, Google Antigravity), and I build agents into my own apps
 -    
 
+My ID is 99110989  
+
+This is module CS627 - Object Oriented Programme
+
 Updated to test GITLAB Functionality
