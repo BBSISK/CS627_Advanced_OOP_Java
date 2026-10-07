@@ -21,6 +21,7 @@ public class Customer {
         this.customerID = nextCustID++;
         this.name = name;
         this.phoneNumber = phoneNumber; 
+        this.carPurchased = null; // No car purchased yet
     }    
 //getters for customer class
 
@@ -38,7 +39,7 @@ public class Customer {
     }
 
     public Car getCar() {
-        return car;
+        return carPurchased;
     }
 
 
@@ -54,8 +55,8 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
+    public void setCarPurchased(Car carPurchased) {
+        this.carPurchased = carPurchased;
     }
 
 
