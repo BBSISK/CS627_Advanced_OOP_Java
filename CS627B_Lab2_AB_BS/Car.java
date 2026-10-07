@@ -5,6 +5,7 @@ public class Car {
     private String carReg;
     private int cost;
     private String colour;
+    private boolean isSold;
 
     public Car(String make, String carReg, int cost , String colour
     ) {
@@ -12,6 +13,7 @@ public class Car {
         this.carReg = carReg;
         this.cost = cost;
         this.colour = colour;
+        this.isSold = false;
     }
 
     public String getMake() {
@@ -30,6 +32,10 @@ public class Car {
         return colour;
     }
 
+    public boolean isSold() {
+        return isSold;
+    }
+
     public void setMake(String make) {
         this.make = make;
     }
@@ -46,6 +52,9 @@ public class Car {
         this.colour = colour;
     }
 
+    public void setSold(boolean sold) {
+        isSold = sold;
+    }
 
     @Override
     public String toString() {

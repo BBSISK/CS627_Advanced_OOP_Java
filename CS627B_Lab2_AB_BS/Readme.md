@@ -29,8 +29,8 @@ Explain:
 For each class, provide:
 · Class name Car
 · Purpose : Container for the class car
-· Main attributes :  String make, String carReg , int cost, String colour, Customer purchasedBy
-· Main methods :   constructor , getMake() , getCarReg() , getCost(), getColour() , setMake() , setCost(), setReg(),  setColour() , toString()
+· Main attributes :  String make, String carReg , int cost, String colour, Boolean isSold
+· Main methods :   constructor , getMake() , getCarReg() , getCost(), getColour() , isSold() , setMake() , setCost(), setReg(),  setColour(), setSold() , toString()
 
 
 · Class name Customer
@@ -52,5 +52,5 @@ and displays information about all cars and customer in the dealership. Each car
 5. Running the Program
 Program will be run from main method from main.java
 6. Team Collaboration
-Briefly describe how the pair worked together to complete the project.
+Great brainstorming on resolving challanges and understadning how classes work together
 7. Additional Notes

@@ -7,12 +7,14 @@ public class CarDealershipManager {
         Dealership dealership = new Dealership("Maynooth", "Aine Boland");
         Car car1 = new Car("Toyota", "212-MH-001", 20000, "Red");   
         Car car2 = new Car("Honda", "212-MH-002", 22000, "Blue");
+        Car car3 = new Car("Ford", "212-MH-003", 25000, "Black");
         Customer customer1 = new Customer("Barry Sisk", "0871234567", car1);
         Customer customer2 = new Customer("Sean Keane", "0879876543");
 
 
         dealership.addCar(car1);
         dealership.addCar(car2);
+        dealership.addCar(car3);
         dealership.addCustomer(customer1);
         dealership.addCustomer(customer2);
 
@@ -33,7 +35,17 @@ public class CarDealershipManager {
          System.out.println("Car in Stock: " );
 
         for(Car car : dealership.getCarsInStock()) {
-            System.out.println(car.toString());
+           if(!car.isSold()) {
+               System.out.println(car.toString());
+           }
+        }
+
+         System.out.println("Car Sold: " );
+
+        for(Car car : dealership.getCarsInStock()) {
+            if(car.isSold()) {
+                System.out.println(car.toString());
+            }
         }
 
 

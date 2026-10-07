@@ -14,6 +14,7 @@ public class Customer {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.carPurchased = car;
+        this.carPurchased.setSold(true); // Mark the car as sold when purchased 
     }   
 
 // constructor for customer with no car
@@ -57,10 +58,12 @@ public class Customer {
 
     public void setCarPurchased(Car carPurchased) {
         this.carPurchased = carPurchased;
+        carPurchased.setSold(true); // Mark the car as sold when purchased
+      
     }
 
 
     public String toString() {
-        return customerID + " " + name + " " + phoneNumber + " " + carPurchased;
+        return customerID + " " + name + " " + phoneNumber;
     }
 }
