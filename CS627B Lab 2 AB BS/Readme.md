@@ -30,18 +30,18 @@ For each class, provide:
 · Class name Car
 · Purpose : Container for the class car
 · Main attributes :  String make, String carReg , int cost, String colour, Customer purchasedBy
-· Main methods :  Default Constructor , constructor , getMake() , getCarReg() , getCost(), getColour() , setMake() , setCost(), setReg(),  setColour() , toString()
+· Main methods :   constructor , getMake() , getCarReg() , getCost(), getColour() , setMake() , setCost(), setReg(),  setColour() , toString()
 
 
 · Class name Customer
 · Purpose : Container for the customer information
 · Main attributes :  int custID, String name , String phoneNumber
-· Main methods :  Default Constructor , constructor , getCustID() , getName() , getPhoneNumber(), , setName() ,          setPhoneNumber() , toString()
+· Main methods :  , constructor , getCustID() , getName() , getPhoneNumber(), , setName() ,          setPhoneNumber() , toString()
 
 · Class name Dealership
 · Purpose : Container for the customer information
 · Main attributes :  int dealerID, String location, String managerName
-· Main methods :  Default Constructor , constructor , getDealerID() , getLocation() , geManagerName(), , setLocation (),          setManagerName() , toString()
+· Main methods :  constructor , getDealerID() , getLocation() , geManagerName(), , setLocation (),          setManagerName() , toString()
 
 
 4. Object Interaction
