@@ -1,3 +1,5 @@
+package CS627B_Lab2_AB_BS; 
+
 public class Customer {     
     private int customerID;
     private String name;
