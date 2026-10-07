@@ -56,4 +56,8 @@ public class Customer {
         this.car = car;
     }
 
+
+    public String toString() {
+        return customerID + " " + name + " " + phoneNumber + " " + carPurchased;
+    }
 }
