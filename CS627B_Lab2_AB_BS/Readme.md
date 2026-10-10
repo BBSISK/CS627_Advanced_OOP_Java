@@ -71,3 +71,5 @@ Signficant help from AB on troubleshooting errors in BBS code
 7. Additional Notes
 
 Very useful exercise in understanding class and class interactions
+Java Skill used during this exercise: Classes and Objectives , encapsulation, Static ID counters, ArrayLsits, overriding toString()
+Otehr Java skills - use of Default construtors, constructors , getters and setters 
