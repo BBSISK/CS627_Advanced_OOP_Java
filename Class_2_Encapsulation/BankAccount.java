@@ -2,11 +2,14 @@ public class BankAccount {
     private String accountHolder;
     private double balance;
     protected String accountType;
+    boolean isFrozen;
+
 
     public BankAccount(String accountHolder, double initialBalance, String accountType) {
         this.accountHolder = accountHolder;
         this.balance = initialBalance;
         this.accountType = accountType;
+        this
     }
 
     public String getAccountHolder() {

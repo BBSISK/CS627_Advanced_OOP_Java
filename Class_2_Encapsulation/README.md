@@ -6,3 +6,8 @@ Also getter for account name , account balance , deposit(with checks)
 
 Savings account is an extension of Bank Account (using 'extends' keyword)
     Different from interface , whihc uses the keyword Implements
+    included contructor, apply interest rate 
+
+
+Added main.java to run the program and create/ instantiate  objects    
+ 
