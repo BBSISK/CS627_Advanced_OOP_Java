@@ -6,6 +6,11 @@ public class main {
         System.out.println("Account Holder: " + account.getAccountHolder());
         System.out.println("Balance: " + account.getBalance());
 
+        account.freezeAccount();
+        account.deposit(100.0); // This should not be allowed since the account is frozen
+        account.unfreezeAccount();  
+
+
         SavingsAccount savingsAccount = new SavingsAccount("Jane Doe", 2000.0, 5.0);
         savingsAccount.deposit(300.0);
         savingsAccount.applyInterest();

@@ -9,7 +9,7 @@ public class BankAccount {
         this.accountHolder = accountHolder;
         this.balance = initialBalance;
         this.accountType = accountType;
-        this
+        this.isFrozen = false;
     }
 
     public String getAccountHolder() {
@@ -36,5 +36,15 @@ public class BankAccount {
         } else {
             System.out.println("Invalid withdrawal amount.");
         }
+    }
+
+    public void freezeAccount() {
+        isFrozen = true;
+        System.out.println("Account frozen.");
+    }
+
+    public void unfreezeAccount() {
+        isFrozen = false;
+        System.out.println("Account unfrozen.");
     }
 }   
