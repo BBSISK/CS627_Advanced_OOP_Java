@@ -1,4 +1,4 @@
-package CS627B_Lab2_Encapsulation;
+package CS627B_Lab3_Encapsulation;
 
 public class Main { 
 
