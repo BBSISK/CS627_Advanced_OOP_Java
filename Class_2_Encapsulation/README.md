@@ -1,4 +1,4 @@
-This exercise is aboout encapsulation - and preventing information being editable in other classes
+This exercise is about encapsulation - and preventing information being editable in other classes
 
 
 Bank account class defined by String accountHolder , double balance , String Account type
