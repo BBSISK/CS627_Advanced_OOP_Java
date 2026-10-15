@@ -21,55 +21,42 @@ Getters and setters can use method in main.
 
 · How encapsulation improved your design.
 5. Class Summary
-For each class provide:
+For Student.java class provide:
 · Class Name.    Student
 · Purpose        Encapsulate the Student details , provide Getters and setters and printDetails ; also constructors for new students
-· Main Attributes.   Name, Student ID , 
-· Main Methods
+· Main Attributes.   Student Name, Student ID , age ; Student ID was generated using a Static variable
+· Main Methods.  Constructor , getName, getStudentID, getAge, setName, set StudentID , setAge, printStudentDetails
 
-For each class provide:
-· Class Name
-· Purpose
-· Main Attributes
-· Main Methods
+For Module.java class provide:
+· Class Name. Modeul
+Purpose        Encapsulate the Module details , provide Getters and setters and printDetails ; also constructors for new modeuls
+· Main Attributes.   modeleName, moduleCode , credits 
+· Main Methods.  Constructor , getModuleName, getModuelCode, getCredits, setModuleName, set moduleCode , setCredits, printModuleDetails
+
+For Main.java class provide:
+· Class Name. Main
+Purpose Create 5 objects and use tow methods to test what Student.class and Module.class are working or not.
+Main Methods: Main(), testStudentClass(), testModuleClass(), runTests().
 
 
 6. Object Relationships
-Explain how objects interact within your system.
+The Main class creates Student and Module objects. We can use getter methods to get the information and setter methods to change the information. Student and Module have their own data and methods. They use encapsulation to protect the data.
 7. Running the Program
-Provide instructions for compiling and running the application.
+Open the terminal and run: "javac *.java"
+And then run: "java Main"
+
+Finally, we can see the following content in the terminal
+
+Student Name: John Doe
+Student Age: 20
+Student ID: S12345
+Updated Student Name: Jane Doe
+Updated Student Age: 21
+Module Name: Computer Science
+Module Code: CS627B
+Module Credits: 10
+Updated Module Name: Advanced Computer Science
+Updated Module Credits: 15
+
 8. Reflection
-Briefly describe:
-· What you learned during this lab.
-· Any challenges you encountered.
-· How you overcame those challenges.
-4 of 4
-Git Submission Requirements
-Submit your work through your assigned Git repository.
-Your repository should contain:
-· README.md
-· Main.java
-· All relevant Java files
-You may include additional classes if required.
-Please tag your submission “lab03”
-Ensure that:
-· All source code is committed and pushed to Git.
-· The README file is included.
-· The project compiles successfully.
-· Instructions for running the application are provided.
-Success Criteria
-A successful submission will:
-· Use private fields appropriately.
-· Include getters and setters.
-· Implement meaningful validation.
-· Demonstrate encapsulation effectively.
-· Create and use multiple objects.
-· Demonstrate meaningful object interaction.
-· Produce clear program output showing the system working.
-· Include a well-written README explaining the design.
-· Be submitted through Git.
-Remember
-The objective is not to create the most complex program possible.Instead, focus on demonstrating a
-solid understanding of encapsulation, data protection, validation, and object interaction while
-designing a system that is meaningful and interesting to you and your partner. A well-designed and
-well-documented solution is more valuable than a large but poorly structured one.
+In this lab, I learned how to use encapsulation in Java. I learned how to use private variables, getter and setter methods.

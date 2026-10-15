@@ -1,6 +1,5 @@
-package CS627B_Lab3_Encapsulation;
 
-public class Module { 
+public class Module {
 
     private String moduleName;
     private String moduleCode;
@@ -25,7 +24,16 @@ public class Module {
     }
 
     public void setModuleCode(String moduleCode) {
-        this.moduleCode = moduleCode;
+        if (moduleName == null || moduleName.isBlank()) {
+            System.out.println("Module name cannot be empty");
+            return;
+        }
+        String checkModuleCode = moduleCode.toUpperCase();
+        if (checkModuleCode.substring(0, 2).equals("CS")) {
+            this.moduleCode = moduleCode.toUpperCase();
+        } else {
+            System.out.println("Invalid module code. It must start with 'CS'.");
+        }
     }
 
     public int getCredits() {
@@ -35,16 +43,26 @@ public class Module {
     public void setCredits(int credits) {
         if (credits > 0 && credits <= 100) {
             this.credits = credits;
-
         } else {
             System.out.println("Invalid credits value. It must be between 1 and 100.");
         }
     }
+
+    private boolean isCreditsPassed() {
+       if (this.credits >= 40) {
+            System.out.println("Credits passed");
+            return true;
+        } else {
+            System.out.println("Credits failed");
+            return false;
+        }
+    }   
+
 
     public void printModuleDetails() {
         System.out.println("Module Name: " + moduleName);
         System.out.println("Module Code: " + moduleCode);
         System.out.println("Module Credits: " + credits);
     }
-    
+
 }

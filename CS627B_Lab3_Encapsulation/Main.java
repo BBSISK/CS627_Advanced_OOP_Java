@@ -1,4 +1,4 @@
-package CS627B_Lab3_Encapsulation;
+
 
 public class Main { 
 
@@ -28,4 +28,37 @@ public class Main {
         System.out.println("Updated Module Credits: " + module.getCredits());
     }
     
+    //Test cases for Student class
+    public static void testStudentClass() {
+        Student student = new Student("Alice", 22, "S1001");
+        student.printStudentDetails();
+
+        // Test setting invalid name
+        student.setName("");
+        student.setName(null);
+
+        // Test setting invalid age
+        student.setAge(-5);
+    }
+    //Test cases for Module class
+    public static void testModuleClass() {
+        Module module = new Module("Data Structures", "CS101", 20);
+        module.printModuleDetails();
+
+        // Test setting invalid module code
+        module.setModuleCode("MATH101");
+        module.setModuleCode("cs102");
+
+        // Test setting invalid credits
+        module.setCredits(-10);
+        module.setCredits(150);
+    }
+
+    // Run test cases
+    public static void runTests() {
+        System.out.println("Running Student class tests...");
+        testStudentClass();
+        System.out.println("\nRunning Module class tests...");
+        testModuleClass();
+    }
 }

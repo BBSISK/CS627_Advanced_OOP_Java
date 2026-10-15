@@ -1,4 +1,4 @@
-package CS627B_Lab3_Encapsulation;
+
 
 public class Student {  
     private String name;
@@ -18,6 +18,10 @@ public class Student {
     }
 
     public void setName(String name) {
+        if (name == null || name.isBlank()) {
+            System.out.println("Name cannot be empty");
+            return;
+        }
         this.name = name;
     }
 
@@ -26,7 +30,11 @@ public class Student {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age > 0) {
+            this.age = age;
+        } else {
+            System.out.println("Invalid age. Please enter a positive value.");
+        }
     }
 
     public String getStudentId() {
